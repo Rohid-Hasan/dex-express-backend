@@ -16,6 +16,6 @@ const Contact = db.define("contact", {
   },
 });
 
-Contact.sync();
+Contact.sync({ force: true });
 
 module.exports = Contact;
